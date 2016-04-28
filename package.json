@@ -1,0 +1,17 @@
+{
+  "name": "devosaber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thiago Della Libera Moreira",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.5",
+    "body-parser": "^1.13.3",
+    "express": "^4.13.4",
+    "underscore": "^1.8.3"
+  }
+}
