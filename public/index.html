@@ -52,17 +52,17 @@
 								value="{{deputado.Partido}}">{{deputado.Partido}}</option></select>
 						</div>
 						<div class="form-group">
+							<label>Partido</label>
+							<select ng-model="voto" ng-init="voto='all'" >
+							<option value="all" ng-selected="true">Todos</option>
+							<option ng-repeat="deputado in deputados | unique:'Voto' | orderBy: 'Voto'"
+								value="{{deputado.Voto}}">{{deputado.Voto}}</option></select>
+						</div>
+						<br />
+						<div class="form-group">
 							<label>Nome</label>
 							<input class="search form" type="text" ng-model="nome" placeholder="buscar deputados"></input>
 						</div> <br />
-						<div class="form-group">
-							<label>A favor</label>
-							<input class="search" type="checkbox" ng-model="search.Voto"></input>	
-						</div>
-						<div class="form-group">
-							<label>Contra</label>
-							<input class="search" type="checkbox" ng-model="search.VotoContra"></input>	
-						</div>
 					</form>
 				</CENTER>
 			</div>

@@ -17,11 +17,11 @@ app.controller('mainController',function($scope,$http){
 	*/
 	$scope.filterEstado = (x)=> $scope.uf==="all" ? true:x.UF==$scope.uf;
 	$scope.filterPartido = (x)=> $scope.partido==="all" ? true:x.Partido==$scope.partido;
-
+	$scope.filterVoto = (x)=> $scope.voto==="all" ? true:x.Voto==$scope.voto;
 	$scope.filterNome = (x)=> new RegExp($scope.nome, "ig").test(x.Nome);
 
 	/*realiza os filtros*/
-	$scope.search = (x) => $scope.filterEstado(x) && $scope.filterPartido(x) && $scope.filterNome(x);
+	$scope.search = (x) => $scope.filterEstado(x) && $scope.filterPartido(x) && $scope.filterVoto(x) && $scope.filterNome(x);
 
 	$scope.getUnique = function(x)
 	{
