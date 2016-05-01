@@ -17,7 +17,7 @@
 			<div class="col-xs-12 col-md-6">
 				<CENTER>
 					asd
-				</CENTER
+				</CENTER>
 			</div>
 			<div class="col-md-3"></div>
 		</div>
@@ -38,30 +38,30 @@
 					<form class="form-inline">
 						<div class="form-group">
 							<label>Estado</label>
-							<select ng-model="uf" ng-init="uf='all'" >
-							<option value="all" ng-selected="true">Todos</option>
+							<select ng-model="uf" ng-init="uf='.'" >
+							<option value="." ng-selected="true">Todos</option>
 							<option ng-repeat="deputado in deputados | unique:'UF' | orderBy: 'UF'"
-								value="{{deputado.UF}}">{{deputado.UF}}</option></select>
+								value="{{deputado.UF}}">{{deputado.UF}}</option>
 							</select>
 						</div>
 						<div class="form-group">
 							<label>Partido</label>
-							<select ng-model="partido" ng-init="partido='all'" >
-							<option value="all" ng-selected="true">Todos</option>
+							<select ng-model="partido" ng-init="partido='.'" >
+							<option value="." ng-selected="true">Todos</option>
 							<option ng-repeat="deputado in deputados | unique:'Partido' | orderBy: 'Partido'"
 								value="{{deputado.Partido}}">{{deputado.Partido}}</option></select>
 						</div>
 						<div class="form-group">
-							<label>Partido</label>
-							<select ng-model="voto" ng-init="voto='all'" >
-							<option value="all" ng-selected="true">Todos</option>
+							<label>Voto</label>
+							<select ng-model="voto" ng-init="voto='.'" >
+							<option value="." ng-selected="true">Todos</option>
 							<option ng-repeat="deputado in deputados | unique:'Voto' | orderBy: 'Voto'"
 								value="{{deputado.Voto}}">{{deputado.Voto}}</option></select>
 						</div>
 						<br />
 						<div class="form-group">
 							<label>Nome</label>
-							<input class="search form" type="text" ng-model="nome" placeholder="buscar deputados"></input>
+							<input class="search form" type="text" ng-model="nome" placeholder="buscar deputados" />
 						</div> <br />
 					</form>
 				</CENTER>
