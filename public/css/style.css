@@ -1,9 +1,11 @@
 body{
 	background-color: #2ecc71;
 }
-
-.subtitulo{
+.logo{
 	margin-top: 100px;
+}
+.subtitulo{
+	margin-top: 50px;
 }
 h2{
 	color:#ecf0f1;
@@ -20,8 +22,14 @@ h2{
 	color:#ecf0f1;
 	text-align: right;
 }
+.placar p{
+	display: inline-block;
+	margin-top: 200px;
+	font-size: 5em;
+	color: #fff;
+}
 #search{
-	margin-top: 150px;	
+	margin-top: 50px;	
 	background-color: #27ae60;
 	padding: 10px;
 	-webkit-border-radius: 5px;
