@@ -32,6 +32,13 @@ npm install
 
 You can get Chart.js [here](www.chartjs.org).
 
+Than run in terminal:
+```
+node server.js
+```
+
+And open url **localhost:3000**
+
 #### As I'm acctually working on this project the libs are a little bit messy, but soon it will be fixed.
 
 
