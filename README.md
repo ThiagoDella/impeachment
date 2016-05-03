@@ -1,6 +1,8 @@
 # Impeachment Project
 This is a project about data visualization using [Chart.js](www.chartjs.org) about the voting for the Impeachment proccess of Brazilian President Dilma Rousseff.
 
+### You can see the preview [here](http://impeachment.herokuapp.com/).
+
 ### Configuration
 To get this running you will need:
 
